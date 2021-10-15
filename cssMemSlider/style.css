@@ -37,3 +37,62 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;}
 /*--------------------*/
 
+.wrapper {
+    margin: 20px auto;
+    width: 75%;
+
+}
+.slider {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: grey;
+    
+}
+.slides {
+    flex-basis: 100%;
+    border-radius: 15px;
+   
+}
+.controls {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    flex-basis: 50%;
+}
+.bullets {
+    column-gap: 30px;
+    display: flex;
+}
+
+.bullet{
+    width: 45px;
+    height: 45px;
+   
+   
+    border-radius: 50%;
+    border: 4px solid rgb(95, 194, 240);
+    background-color: rgb(95, 194, 240);
+}
+.bullets span:hover {
+    border: white;
+    background-color: #fff;
+}
+span input:checked {
+    background-color: black;
+    opacity: 1;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+   
+   
+}
