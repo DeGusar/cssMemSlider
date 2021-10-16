@@ -10,28 +10,44 @@
 <body>
     <div class="wrapper">
         <div class="slider">
+                <input type="radio" id="firstbullet" name="radio-bullet"  checked >
+                <input type="radio" id="secondbullet" name="radio-bullet"  >
+                <input type="radio" id="thirdbullet" name="radio-bullet"  >
+                <input type="radio" id="fourthbullet" name="radio-bullet"  >
+           
+            
             <div class="slides">
-                <div class="slide first"><img src="" alt="memasik"></div>
-                <div class="slide second"><img src="" alt="memasik"></div>
-                <div class="slide third"><img src="" alt="memasik"></div>
-                <div class="slide fourth"><img src="" alt="memasik"></div>
+                <div class="slide first"><img src="./images/1.jpg" alt="memasik"></div>
+                <div class="slide "><img src="./images/2.jpg" alt="memasik"></div>
+                <div class="slide "><img src="./images/3.jpg" alt="memasik"></div>
+                <div class="slide "><img src="./images/4.jpg" alt="memasik"></div>
+                        
             </div>
             <div class="controls">
                 <div class="content">
-                    <label for="first-bullet first" class=text>First</label>
-                    <label for="second-bullet second" class=text>Second</label>
-                    <label for="third-bullet third" class=text>Third</label>
-                    <label for="fourth-bullet fourth" class=text>Fourth</label>
-                    
+                    <div class="mini-slides">
+                        <div class="first">first</div>
+                        <div>second</div>
+                        <div>third</div>
+                        <div>fourth</div>
+                    </div>
+                   
+
                 </div>
                 <div class="bullets">
-                    <input type="radio" id="first-bullet" name='radio-bullet' class="bullet" >
-                    <input type="radio" id="second-bullet" name='radio-bullet' class="bullet" >
-                    <input type="radio" id="third-bullet" name='radio-bullet' class="bullet" >
-                    <input type="radio" id="fourth-bullet" name='radio-bullet' class="bullet" >
-                    
+                    <label for="firstbullet" class=bullet><span></span></label>
+                    <label for="secondbullet" class=bullet><span></span></label>
+                    <label for="thirdbullet" class=bullet><span></span></label>
+                    <label for="fourthbullet" class=bullet><span></span></label>
                 </div>
             </div>
+            
+           
+           
+            
+                    
+               
+           
         </div>
     </div>
    
