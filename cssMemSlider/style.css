@@ -44,16 +44,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
 
 }
 .slider {
-  
-  
-    
-
    background-color: grey;
    overflow:hidden;
    width: 100% ;
-  
-    
-    
+     
 }
 .slides {
     border-radius: 15px;
@@ -67,7 +61,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
 }
 
 .slide {
-    padding: 20px;
+   /*  padding: 20px; */
     width: 25%;
     border-radius: 15px;
     height: 100%;
@@ -103,18 +97,48 @@ input {
     display: flex;
 }
 label {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 .bullet span {
     display: block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: chartreuse;
+    background-color: rgb(126, 166, 240);
+}
+#firstbullet:checked ~ .controls .bullets .bullet-one span,
+#secondbullet:checked ~ .controls .bullets .bullet-two span,
+#thirdbullet:checked ~ .controls .bullets .bullet-three span,
+#fourthbullet:checked ~ .controls .bullets .bullet-four span{
+    background-color: black;
+    border: 4px solid #7EA6E0 ;
+}
+#firstbullet:checked ~ .controls .bullets .bullet-one span:hover,
+#secondbullet:checked ~ .controls .bullets .bullet-two span:hover,
+#thirdbullet:checked ~ .controls .bullets .bullet-three span:hover,
+#fourthbullet:checked ~ .controls .bullets .bullet-four span:hover {
+    border: 4px solid #fff;
 }
 
+#firstbullet:checked ~ .controls .bullets .bullet-one:hover span,
+#secondbullet:checked ~ .controls .bullets .bullet-two:hover span,
+#thirdbullet:checked ~ .controls .bullets .bullet-three:hover span,
+#fourthbullet:checked ~ .controls .bullets .bullet-four:hover span {
+    border: 4px solid #fff;
+}
+
+ .bullet-one:hover span,
+ .bullet-two:hover  span,
+ .bullet-three:hover  span,
+ .bullet-four:hover span{
+   background-color: #fff;
+}
 
 #firstbullet:checked ~ .slides .first {
     margin-left: 0;
